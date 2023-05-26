@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
-export const Finder = ({ filter, onChange }) => {
+export const Finder = ({ finder, onChange }) => {
   return (
-    <input type="text" name="filter" value={filter} onChange={onChange}></input>
+    <input type="text" name="finder" value={finder} onChange={onChange}></input>
   );
 };
 
 Finder.propTypes = {
-  filter: PropTypes.string.isRequired,
+  finder: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
